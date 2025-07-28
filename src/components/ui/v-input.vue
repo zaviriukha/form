@@ -8,8 +8,7 @@
         v-model="inputValue"
         :type="type"
         :placeholder="placeholder"
-        :disabled="disabled"
-        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
+        class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
     />
   </div>
 </template>
@@ -25,7 +24,6 @@ const props = defineProps({
     default: 'text'
   },
   placeholder: String,
-  disabled: Boolean,
   id: String
 })
 
